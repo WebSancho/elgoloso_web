@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>El Goloso - Tu tienda en San Agustín del Guadalix</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fff9f0",
+                      "surface-container-low": "#f9f3ea",
+                      "on-secondary-container": "#715d00",
+                      "on-primary-fixed-variant": "#8c1520",
+                      "surface-container": "#f3ede4",
+                      "background": "#fff9f0",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#e0bfbd",
+                      "inverse-surface": "#32302a",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#00504c",
+                      "on-secondary-fixed-variant": "#554500",
+                      "on-primary-container": "#6d0010",
+                      "primary": "#ae2f34",
+                      "surface-dim": "#dfd9d1",
+                      "on-primary-fixed": "#410006",
+                      "inverse-on-surface": "#f6f0e7",
+                      "inverse-primary": "#ffb3b0",
+                      "on-tertiary-fixed": "#00201e",
+                      "secondary-container": "#fdd73b",
+                      "on-primary": "#ffffff",
+                      "outline": "#8c706f",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#fff9f0",
+                      "error-container": "#ffdad6",
+                      "surface-container-highest": "#e7e2d9",
+                      "primary-fixed-dim": "#ffb3b0",
+                      "tertiary-fixed": "#7cf6ec",
+                      "on-tertiary-container": "#003a37",
+                      "secondary-fixed": "#ffe173",
+                      "error": "#ba1a1a",
+                      "surface-variant": "#e7e2d9",
+                      "surface-container-high": "#ede7df",
+                      "surface-tint": "#ae2f34",
+                      "on-secondary-fixed": "#221b00",
+                      "tertiary-fixed-dim": "#5dd9d0",
+                      "primary-fixed": "#ffdad8",
+                      "tertiary-container": "#1eada5",
+                      "on-background": "#1d1b16",
+                      "primary-container": "#ff6b6b",
+                      "secondary": "#705d00",
+                      "on-error-container": "#93000a",
+                      "on-surface-variant": "#584140",
+                      "tertiary": "#006a65",
+                      "on-surface": "#1d1b16",
+                      "secondary-fixed-dim": "#e8c426"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "gutter": "16px",
+                      "margin-desktop": "40px",
+                      "stack-sm": "4px",
+                      "stack-md": "12px",
+                      "stack-lg": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg-mobile": [
+                              "Nunito Sans"
+                      ],
+                      "headline-md": [
+                              "Nunito Sans"
+                      ],
+                      "headline-lg": [
+                              "Nunito Sans"
+                      ],
+                      "display": [
+                              "Nunito Sans"
+                      ],
+                      "label-sm": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .squish-hover:hover { transform: translateY(2px) scale(0.98); box-shadow: 0 1px 2px rgba(174,47,52,0.2); }
+        .btn-primary { box-shadow: 0 3px 0 0 rgba(109, 0, 16, 0.4); transition: all 0.1s ease; }
+        .btn-primary:active { transform: translateY(3px); box-shadow: 0 0px 0 0 rgba(109, 0, 16, 0.4); }
+        .btn-secondary { box-shadow: 0 3px 0 0 rgba(113, 93, 0, 0.4); transition: all 0.1s ease; }
+        .btn-secondary:active { transform: translateY(3px); box-shadow: 0 0px 0 0 rgba(113, 93, 0, 0.4); }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden pt-[80px]">
+<!-- TopNavBar (Web) -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface dark:bg-surface-dim hidden md:block">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-[1200px] mx-auto">
+<div class="font-display text-headline-lg text-primary dark:text-primary-fixed-dim">
+                El Goloso
+            </div>
+<nav class="flex gap-gutter">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors hover:bg-secondary-container/20 hover:text-on-secondary-container transition-all px-2 rounded-lg" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors hover:bg-secondary-container/20 hover:text-on-secondary-container transition-all px-2 rounded-lg" href="#productos">Productos</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors hover:bg-secondary-container/20 hover:text-on-secondary-container transition-all px-2 rounded-lg" href="#testimonios">Testimonios</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors hover:bg-secondary-container/20 hover:text-on-secondary-container transition-all px-2 rounded-lg" href="#contacto">Contacto</a>
+</nav>
+<a class="bg-primary text-on-primary font-label-md px-4 py-2 rounded-full btn-primary flex items-center gap-2" href="tel:616388314">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                Llamar Ahora
+            </a>
+</div>
+</header>
+<!-- Mobile Header -->
+<header class="fixed top-0 w-full z-50 shadow-sm bg-surface flex md:hidden justify-between items-center px-margin-mobile py-4">
+<div class="font-display text-headline-md text-primary">El Goloso</div>
+</header>
+<!-- 1. HERO -->
+<section class="relative w-full min-h-[870px] flex items-center px-margin-mobile md:px-margin-desktop py-stack-lg max-w-[1200px] mx-auto" id="inicio">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center w-full z-10 relative">
+<div class="flex flex-col gap-stack-md bg-surface/80 p-6 rounded-xl backdrop-blur-sm shadow-lg border border-surface-variant">
+<h1 class="font-display text-headline-lg-mobile md:text-display text-on-surface">Tu tienda de confianza en el centro de San Agustín del Guadalix</h1>
+<p class="font-body-lg text-on-surface-variant">Snacks, bebidas, alimentación básica y mucho más — abierto todos los días.</p>
+<div class="flex flex-col md:flex-row gap-stack-sm mt-stack-md">
+<a class="bg-primary text-on-primary font-label-md px-6 py-3 rounded-full btn-primary text-center flex items-center justify-center gap-2" href="#productos">
+<span class="material-symbols-outlined">inventory_2</span>
+                        Ver productos
+                    </a>
+<a class="bg-secondary-container text-on-secondary-container font-label-md px-6 py-3 rounded-full btn-secondary text-center flex items-center justify-center gap-2" href="#contacto">
+<span class="material-symbols-outlined">location_on</span>
+                        Cómo llegar
+                    </a>
+</div>
+<div class="mt-stack-sm text-center md:text-left">
+<a class="text-primary font-label-md hover:underline flex items-center justify-center md:justify-start gap-1" href="tel:616388314">
+<span class="material-symbols-outlined text-sm">phone_in_talk</span>
+                        Llámanos: 616 38 83 14
+                    </a>
+</div>
+</div>
+<div class="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-xl border-4 border-surface-container">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A warm, inviting digital illustration of a charming neighborhood convenience shop named 'El Goloso' in a sunny Spanish town setting. The storefront features colorful awnings, a welcoming open door revealing neatly stocked shelves with snacks and drinks. Outside, there are vibrant potted plants and a small chalkboard sign. The style is cozy, colorful, and highly detailed with a soft, natural lighting effect, evoking a friendly, tactile, and approachable atmosphere suitable for a light-mode UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf7Von6uRyoCUsZvq7Ihy98z8aLAey75DQUwZDvviKY65F5jtIMnnOp7e1VK2bDfIuOUqeJ4EtbNitD07ScxEC61WG1NYklKxjIrFLwgjueECzG_XikebryMpVoffpHGj5BPkuGNU-HCohPIMO4ZQDjN1nOq3XadUuvmJGq7W9Tvz-sS4eK5cnrbNYiEcap7ynBlomb6ysFfQU3Dr872SgmDf9ibbJpmsWMxY4RoK0IZCA0tfsiN_A"/>
+<div class="absolute bottom-4 right-4 bg-surface text-on-surface px-3 py-1 rounded-full text-sm font-label-sm shadow-md flex items-center gap-1 border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                     Abierto Hoy
+                 </div>
+</div>
+</div>
+<!-- Decorative blob background -->
+<div class="absolute inset-0 z-0 opacity-30 pointer-events-none" style="background-image: radial-gradient(circle at 80% 20%, #ffdad8 0%, transparent 40%), radial-gradient(circle at 20% 80%, #ffe173 0%, transparent 40%);"></div>
+</section>
+<!-- 2. SOBRE EL GOLOSO -->
+<section class="w-full bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop" id="nosotros">
+<div class="max-w-[900px] mx-auto text-center flex flex-col gap-stack-md">
+<span class="text-primary font-label-md tracking-wider uppercase">Nuestra Historia</span>
+<h2 class="font-headline-md md:text-headline-lg text-on-surface">No somos un supermercado — somos tu tienda de siempre.</h2>
+<div class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant relative mt-stack-md text-left md:text-center">
+<span class="material-symbols-outlined absolute -top-4 -left-4 text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-md text-on-surface-variant">
+                    En El Goloso, llevamos años sirviendo a las familias de San Agustín del Guadalix. Nos enorgullece conocer a nuestros clientes por su nombre, saber qué pan prefieren por la mañana o qué dulce buscan los más pequeños por la tarde. Ubicados en el corazón del pueblo, ofrecemos un trato cercano y una selección cuidada de productos para tu día a día.
+                </p>
+<div class="mt-4 flex justify-center gap-2">
+<span class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm">Trato Personal</span>
+<span class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm">Ubicación Central</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. PRODUCTOS -->
+<section class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto" id="productos">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-stack-sm">
+<div>
+<h2 class="font-headline-md md:text-headline-lg text-on-surface">¿Qué encontrarás aquí?</h2>
+<p class="font-body-md text-on-surface-variant mt-2">Nuestra selección para tu día a día.</p>
+</div>
+<div class="bg-secondary-container/20 text-on-secondary-container border border-secondary-container px-4 py-2 rounded-xl flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="font-label-sm">L-D · 10:00–14:00 y 17:00–19:00</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant flex flex-col items-center text-center squish-hover transition-transform duration-200 cursor-pointer">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+</div>
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Bebidas frías y calientes</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Refrescos, cafés para llevar y más.</p>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant flex flex-col items-center text-center squish-hover transition-transform duration-200 cursor-pointer">
+<div class="w-16 h-16 bg-secondary-container/40 rounded-full flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">icecream</span>
+</div>
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Golosinas y dulces</h3>
+<p class="font-body-md text-on-surface-variant text-sm">El paraíso para los más golosos.</p>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant flex flex-col items-center text-center squish-hover transition-transform duration-200 cursor-pointer">
+<div class="w-16 h-16 bg-tertiary-container/20 rounded-full flex items-center justify-center text-tertiary mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
+</div>
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Alimentación básica</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Pan fresco, leche, conservas y esenciales.</p>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant flex flex-col items-center text-center squish-hover transition-transform duration-200 cursor-pointer">
+<div class="w-16 h-16 bg-outline-variant/30 rounded-full flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">ac_unit</span>
+</div>
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Helados y caprichos</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Para refrescarte en verano o darte un gusto.</p>
+</div>
+<!-- Product Card 5 -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant flex flex-col items-center text-center squish-hover transition-transform duration-200 cursor-pointer">
+<div class="w-16 h-16 bg-surface-variant rounded-full flex items-center justify-center text-on-surface mb-4">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<h3 class="font-headline-md text-on-surface text-lg mb-2">Prensa y día a día</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Revistas, periódicos y artículos varios.</p>
+</div>
+</div>
+</section>
+<!-- 4. OPINIONES -->
+<section class="w-full bg-surface-container-low py-stack-lg px-margin-mobile md:px-margin-desktop" id="testimonios">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md md:text-headline-lg text-on-surface">Lo que dicen los vecinos</h2>
+<div class="flex items-center justify-center gap-1 mt-2 text-secondary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+<span class="text-on-surface-variant font-label-md ml-2 text-black">4,5 sobre 5 en Google Maps</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Testimonial 1 -->
+<div class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant relative">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-primary-container rounded-full flex items-center justify-center text-on-primary font-bold">M</div>
+<div>
+<p class="font-label-md text-on-surface">María</p>
+<p class="font-label-sm text-on-surface-variant">mayo 2024</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"Siempre encuentro lo que necesito y el trato es inmejorable. Te atienden con una sonrisa. La mejor tienda del barrio."</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant relative">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container font-bold">C</div>
+<div>
+<p class="font-label-md text-on-surface">Carlos G.</p>
+<p class="font-label-sm text-on-surface-variant">abril 2024</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"Perfecto para bajar a comprar el pan y de paso llevarte algún snack. Tienen mucha variedad y está muy céntrico."</p>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant relative">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container font-bold">A</div>
+<div>
+<p class="font-label-md text-on-surface">Ana López</p>
+<p class="font-label-sm text-on-surface-variant">marzo 2024</p>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant italic">"Mis hijos adoran ir a comprar golosinas allí. La tienda es súper acogedora y siempre está limpia y ordenada."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. CONTACTO & MAPA -->
+<section class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto mb-20 md:mb-0" id="contacto">
+<h2 class="font-headline-md md:text-headline-lg text-on-surface mb-stack-md text-center md:text-left">Ven a vernos</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<!-- Contact Info & Form -->
+<div class="flex flex-col gap-stack-md bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<h4 class="font-label-md text-on-surface">Dirección</h4>
+<p class="font-body-md text-on-surface-variant">C. de Julián Berrendero, 28750<br/>San Agustín del Guadalix, Madrid<br/><span class="text-sm">(junto a Plaza Juan Carlos I)</span></p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">phone</span>
+<div>
+<h4 class="font-label-md text-on-surface">Teléfono</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="tel:616388314">616 38 83 14</a>
+</div>
+</div>
+<div class="mt-4 border-t border-surface-variant pt-4">
+<h4 class="font-label-md text-on-surface mb-4">Envíanos un mensaje</h4>
+<form class="flex flex-col gap-3">
+<input class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-2 font-body-md text-on-surface focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container w-full shadow-inner" placeholder="Tu Nombre" type="text"/>
+<input class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-2 font-body-md text-on-surface focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container w-full shadow-inner" placeholder="Email o Teléfono" type="text"/>
+<textarea class="bg-surface-container-lowest border-2 border-surface-variant rounded-lg p-2 font-body-md text-on-surface focus:outline-none focus:border-secondary-container focus:ring-1 focus:ring-secondary-container w-full shadow-inner resize-none" placeholder="¿En qué te podemos ayudar?" rows="3"></textarea>
+<button class="bg-primary text-on-primary font-label-md px-4 py-2 rounded-lg btn-primary self-start" type="button">Enviar Mensaje</button>
+</form>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="rounded-2xl overflow-hidden shadow-sm border-4 border-surface-container h-[400px] lg:h-auto min-h-[300px] relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A stylized, light-mode custom Google Map rendering centered on San Agustín del Guadalix, Madrid. The map should have a soft, warm color palette featuring cream backgrounds for land, muted blue for water, and coral red markers indicating the location of 'El Goloso' on C. de Julián Berrendero. The streets and parks should be delineated with gentle, rounded lines to match the friendly neighborhood aesthetic." data-location="San Agustín del Guadalix, Madrid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClVMDEblggj2GxS2s1JXrymSWoMHtGphs-9ZWw9AMWiNnrPY7HDdzhyMgouYoKPz5A8FOwa3eWFRnYdD80ARAL7obMob7vEF94JiBX7yZjIsDcZEp2UerzE7shQLDXefRWM1OFOSTmfqxAcwWFkjEjAs-sEe62zTM1CzC-YbwDeyvgOdXoc6jdLXNFHciPid-PEt08vaeqFFCAD3H2rKfvKcn3girB4Hbj25L-MSuvG8OeddKQ-RNX"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-stack-lg bg-surface-container-highest dark:bg-inverse-surface">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-stack-lg max-w-[1200px] mx-auto text-on-surface dark:text-inverse-on-surface">
+<div>
+<div class="font-display text-headline-md text-primary mb-2">El Goloso</div>
+<p class="font-body-md text-sm opacity-80">© 2024 El Goloso San Agustín del Guadalix.<br/>Todos los derechos reservados.</p>
+</div>
+<div class="flex flex-col gap-2 font-label-sm">
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Aviso Legal</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors opacity-80 hover:opacity-100" href="#">Privacidad</a>
+</div>
+<div class="flex flex-col gap-2 font-label-sm text-on-surface-variant opacity-80">
+<span>C. de Julián Berrendero</span>
+<span>616 38 83 14</span>
+<span>L-D 10-14h, 17-19h</span>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 md:hidden rounded-t-xl shadow-[0_-4px_10px_rgba(174,47,52,0.05)] bg-surface bg-surface/95 dark:bg-surface-container-low/95">
+<div class="flex justify-around items-center h-16 px-4 pb-safe">
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:bg-surface-container-high scale-95 transition-transform duration-150 w-full" href="tel:616388314">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span class="font-label-sm text-[10px]">Llamar</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 scale-95 transition-transform duration-150 w-full" href="https://wa.me/34616388314">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-label-sm text-[10px] font-bold">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:bg-surface-container-high scale-95 transition-transform duration-150 w-full" href="#contacto">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+<span class="font-label-sm text-[10px]">Ubicación</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary active:bg-surface-container-high scale-95 transition-transform duration-150 w-full" href="#productos">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+<span class="font-label-sm text-[10px]">Horario</span>
+</a>
+</div>
+</nav>
+<!-- Floating WhatsApp Button (Desktop) -->
+<a class="hidden md:flex fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 items-center justify-center" href="https://wa.me/34616388314">
+<svg class="bi bi-whatsapp" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+</a>
+</body></html>
